@@ -30,11 +30,11 @@ In this exercise, an investment bank is interested in offering a new cryptocurre
 
 ![6 coins mined](https://user-images.githubusercontent.com/97558998/175302822-bb4130f2-032d-49d6-b5d9-7bdc3bfe1e66.png)
 
-- I then dropped the 'CoinName' column since it would not be used on the clustering algorithm, created a new DatFrame that stored all cryptocurrency names from the *CoinName* column and retained the index from the original DataFrame, used *get-dummies()* to create variables for text features, and standardized the data with *StandardScaler().fit_transform(X)*.
+- I then dropped the 'CoinName' column since it would not be used on the clustering algorithm, created a new DataFrame that stored all cryptocurrency names from the *CoinName* column and retained the index from the original DataFrame, used *get-dummies()* to create variables for text features, and standardized the data with *StandardScaler().fit_transform(X)*.
 
 ### Deliverable 2: Reducing Data Dimensions Using PCA (Principal Component Analysis)
 
-- I used the PCA model to reduce the dimension to three principal components and create a new dataframe:
+- I used the PCA model to reduce the dimension to three principal components and created a new dataframe:
 
 <img width="357" alt="three components" src="https://user-images.githubusercontent.com/97558998/175303381-66b48cf3-d438-467e-be92-1846fb465956.png">
 
@@ -58,11 +58,7 @@ In this exercise, an investment bank is interested in offering a new cryptocurre
 
 ![table](https://user-images.githubusercontent.com/97558998/175314425-12fd9c0c-62be-4c63-a973-2d6cc8cddf8f.png)
 
-- I scaled the data to create a scatter plot, created a new dataframe for the scaled data, and added *CoinName* and *Class* columns to the new dataframe:
-
-![13 table with 532 stmt](https://user-images.githubusercontent.com/97558998/175305515-205c11c6-eda3-4b97-8ca0-1f4a93317b2e.png)
-
-- Finally, I created a scatterplot that shows the CoinName when you hover over the data point:
+- I scaled the data to create a scatter plot, created a new dataframe for the scaled data, added *CoinName* and *Class* columns to the new dataframe, and, finally, I created a scatterplot that shows the CoinName when you hover over the data point:
 
 ![last scatter plot](https://user-images.githubusercontent.com/97558998/175313563-13459a10-0cdc-4ed2-974b-09daa06b7088.png)
 
