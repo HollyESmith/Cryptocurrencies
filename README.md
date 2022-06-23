@@ -20,13 +20,13 @@ In this exercise, an investment bank is interested in offering a new cryptocurre
 
 ![2 Renamed Unnamed col and set index](https://user-images.githubusercontent.com/97558998/175301722-034bee0a-c3ed-4c13-a16f-4be976627546.png)
 
-- I kept all cryptocurrencies that were being traded and had a working algorithm, which reduced the dataset to 1,144 rows, and removed the "IsTrading" columns, reducing the dataset to 5 columns.
+- I kept all cryptocurrencies that were being traded and had a working algorithm, which reduced the dataset to 1,144 rows, and removed the "IsTrading" column, reducing the dataset to 5 columns.
 
 - I then removed rows with null values, which reduced the dataset to 685 rows:
 
 <img width="656" alt="remove null values" src="https://user-images.githubusercontent.com/97558998/175302559-13b1c552-86ef-4047-be14-51a91adfff92.png">
 
-- I kept the rows where coins are mined [["TotalCoinsMined"] > 0], which left 532 rows:
+- I kept the rows where coins are mined *[["TotalCoinsMined"] > 0]*, which left 532 rows:
 
 ![6 coins mined](https://user-images.githubusercontent.com/97558998/175302822-bb4130f2-032d-49d6-b5d9-7bdc3bfe1e66.png)
 
@@ -52,19 +52,18 @@ In this exercise, an investment bank is interested in offering a new cryptocurre
 
 - To visualize the results, I created a 3D-scatter plot with clusters, using *hover_name* and *hover_data* parameters for the *CoinName* and *Algorithm* columns, respectively:
 
-![15 3D scatter plot](https://user-images.githubusercontent.com/97558998/175305146-21d14c77-7e7a-4a39-9223-fcbad99260c1.png)
+![3D hover plot](https://user-images.githubusercontent.com/97558998/175311721-38f83cdd-932c-49f1-b6aa-5ab716e43c17.png)"
 
-![3Dscatter](https://user-images.githubusercontent.com/97558998/175310012-15910341-8ee2-44e5-aea5-b1f96fa9cee4.png)
+- I created a table with tradable cryptocurrencies using the *hvplot.table()* functiont:
 
-- I created a table with tradable cryptocurrencies:
+![table](https://user-images.githubusercontent.com/97558998/175314425-12fd9c0c-62be-4c63-a973-2d6cc8cddf8f.png)
 
-![13 table with 532 stmt](https://user-images.githubusercontent.com/97558998/175305343-75aa8a17-93b3-4b98-8d08-4e4075fc3099.png)
-
-- Scaled data to create a scatter plot, created a new dataframe for scaled data, and added “CoinName” and “Class” columns to the new dataframe:
+- I scaled the data to create a scatter plot, created a new dataframe for the scaled data, and added *CoinName* and *Class* columns to the new dataframe:
 
 ![13 table with 532 stmt](https://user-images.githubusercontent.com/97558998/175305515-205c11c6-eda3-4b97-8ca0-1f4a93317b2e.png)
 
-- Finally, I created a scatterplot:
+- Finally, I created a scatterplot that shows the CoinName when you hover over the data point:
 
-![scatter_plot](https://user-images.githubusercontent.com/97558998/175305588-8f1b6b81-616b-4b13-bd8a-dfbd6716bc22.png)
+![last scatter plot](https://user-images.githubusercontent.com/97558998/175313563-13459a10-0cdc-4ed2-974b-09daa06b7088.png)
+
 
